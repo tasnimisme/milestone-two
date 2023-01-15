@@ -1,0 +1,295 @@
+*{
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+}
+/* header section  */
+.header{
+  padding-top: 50px;
+  width: 100%;
+height: 120vh;
+background: rgba(255, 144, 14, 0.1);
+}
+/* navigation style  */
+nav{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 280px;
+  padding-bottom: 50px;
+  
+}
+.nav-title {
+  font-weight: 700;
+  font-size: 45px;
+}
+nav ul{
+  display: flex;
+  align-items: center;
+}
+nav li{
+  list-style: none;
+  margin-left: 50px;
+  font-size: 18px;
+  font-weight: 500;
+}
+p{
+  margin-top: 10px;
+}
+/* banner style  */
+.banner{
+  margin: 0 280px;
+  text-align: center;
+  justify-content: center;
+}
+.banner-title{
+  font-weight: 700;
+  font-size: 64px;
+}
+.banner-description{
+  font-weight: 400;
+  font-size: 16px;
+}
+.button{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.btn-primary{
+  padding: 20px;
+  background-color: #FD6E0A;
+  color: #ffffff;
+ border: 0;
+ border-radius: 5px;
+ font-weight: 600;
+ font-size: 20px;
+}
+/* list style  */
+.list{
+  margin: 85px 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.image{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    text-align: left;
+  
+}
+.text{
+  margin-left: 73px;
+}
+.list-title{
+  font-weight: 700;
+  font-size: 45px;
+}
+.color-one{
+  color: #727272;
+
+}
+.color-two{
+  color: #FF900E;
+}
+.list-description{
+  font-weight: 400;
+  font-size: 16px;
+}
+
+  
+/* features style  */
+.features{
+  display: flex;
+  margin: 0 300px;
+  justify-content: space-between;
+}
+.feature-details{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-row-gap: 15px;
+  text-align: left;
+  margin-right: 20px;
+  width: 576px;
+}
+.title-design{
+  display: flex;
+  align-items: center;
+}
+.fe-title {
+  font-weight: 700;
+  font-size: 45px;
+}
+.fe-extra{
+  height: 106px;
+  width: 7px;
+  background-color: #FF900E;
+  margin-right: 7px;
+}
+.all-features{
+  background-color: #ffffff;
+box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+border-radius: 8px;
+padding: 20px;
+}
+
+.btn-pic{
+  margin: 0;
+  background-color: #FD6E0A;
+  padding: 20px;
+  color: #ffffff;
+  border: 0;
+  border-radius: 7px;
+}
+.title, .fact-title, .sponsor-title{
+  font-weight: 700;
+  font-size: 45px;
+}
+.btn-para{
+  font-weight: 500;
+  font-size: 25px;
+}
+/* fact styles  */
+.facts{
+  margin: 100px 300px;
+}
+.fact-all-info{
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 360px;
+}
+.fact-info{
+  border: 1px solid #FF900E;  
+  border-radius: 8px;
+  margin: 20px;
+  padding: 50px;
+  text-align: center;
+  transition: width 5s;
+  
+
+}
+.fact-info:hover {
+  /* background-color: aqua; */
+  height: 200px;
+  width: 200px;
+}
+.sponsors{
+  margin: 0 280px;
+  text-align: center;
+  justify-content: center;
+}
+.spons-img{
+  margin: 100px 280px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* contact styles */
+.connect {
+  display: flex;
+  gap: 100px;
+  display: flex;
+  background: #000000;
+  color: #ffffff;
+  padding: 130px 200px;
+  margin: 50px 280px;
+}
+
+.sec-title {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.sec-description {
+  margin-bottom: 10px;
+}
+
+.connect input[type="email"] {
+  border: 0;
+  width: 300px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+input {
+  height: 40px;
+}
+
+.connect a {
+  text-decoration: none;
+}
+.cont{
+  padding: 10px;
+}
+
+/* footer styles */
+.footer{
+  margin: 10px 280px;
+  margin-bottom: 100px;
+  background-color: antiquewhite;
+  text-align: center;
+  padding: 38px 410px;
+}
+
+
+/* media responsive  */
+
+@media screen and (max-width:576px) {
+  .facts, .sponsors{
+    margin: 0 10px;
+  padding: 0;
+  text-align: center;
+  justify-content: center;
+  }
+  .fact-all-info{
+    margin: 10px 20px;
+    flex-direction: column;
+  }
+.spons-img{
+  flex-direction: column;
+  margin:20px 50px;
+  padding: 10px 100px;
+  gap: 20px;
+}
+.head-img{
+  margin: 0;
+  height: 200px;
+  width: 500px;
+}
+nav, .banner, .features{
+  margin: 0;
+}
+nav ul, .features{
+  flex-direction: column;
+}
+.list{
+  margin: 0;
+  flex-direction: column;
+}
+.image{
+display: flex;
+flex-direction: column;
+}
+.header{
+  padding: 45px;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.large-pic{
+  height: 400px;
+  width: 300px;
+}
+.connect{
+  margin: 0;
+  flex-direction: column;
+  padding: 60px;
+}
+.footer{
+  height: 50px;
+  width: 100%;
+  margin: 0;
+  padding: 20px 50px;
+}
+}
